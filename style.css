@@ -3,3 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+td{
+    width: 35px;
+    padding: 10px;
+}
