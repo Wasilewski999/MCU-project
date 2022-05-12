@@ -4,7 +4,96 @@
     box-sizing: border-box;
 }
 td{
-    width: 35px;
+    width: 10%;
     padding: 10px;
     background-color: azure;
+    background-color: rgba(76, 100, 114);
+    text-align: center;
+    border: 1px solid rgb(102, 54, 54);
+    font-family: Arial, Helvetica, sans-serif;
 }
+#grid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas: 
+    "phase1 phase2"
+    "phase3 phase4"
+    "phase5 phase5";
+}
+
+.phase1{
+    grid-area: phase1;
+    overflow-x: hidden;
+}
+.phase2{
+    grid-area: phase2;
+    overflow-x: hidden;
+}
+.phase3{
+    grid-area: phase3;
+    overflow-x: hidden;
+}
+.phase4{
+    grid-area: phase4;
+    overflow-x: hidden;
+}
+.phase5{
+    grid-area: phase5;
+    background-color: blueviolet;
+    overflow-x: hidden;
+}
+table{
+    border-collapse: collapse;
+}
+h2{
+    text-align: center;
+    background-color: gray;
+    padding: 5px;
+}
+h1{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+th{
+    font-family: fantasy;
+    color: antiquewhite;
+    background-color: rgb(42, 68, 68);
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 780px) {
+    .phase1{
+        overflow-x: scroll;
+    }
+    .phase2{
+        overflow-x: scroll;
+    }
+    .phase3{
+        overflow-x: scroll;
+    }
+    .phase4{
+        overflow-x: scroll;
+    }
+  }
